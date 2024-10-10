@@ -17,27 +17,67 @@
         cursor: pointer;
         /*add space*/
         margin-right: 8px;
+        /*change between styles when hovering*/
+        transition: opacity 0.15s;
     }
     .like-button {
-        background-color: green;
+        background-color: rgb(255, 255, 255);
         /*change border color*/
-        border-color: yellow;
+        color: rgb(83, 83, 0);
+        border-color: rgb(83, 83, 0);
         /*change border paint of color*/
         border-style: solid;
         height: 40px;
         width: 105px;
         margin-right: 8px;
         border-radius: 2px;
+        cursor: pointer;
+        /*always put the transition in the original class so it works for all base style*/
+        transition: background-color 0.15s,
+            color 0.15s;
 
     }
+    /*not hovering style*/
     .dislike-button {
         background-color: red;
         border-style: solid;
         border: none;
         height: 40px;
         width: 105px;
-    }
+        margin-left: 8px;
+        cursor: pointer;
+        /*back round border height/2*/
+        border-radius: 20px;
+        transition: box-shadow 0.15s;
 
+    }
+/*
+hover effect when you put cursor on button (sedo class = hover) we get these styles and the original style
+*/
+
+.follow-button:hover {
+    /*how see through an 0-1 1 is normal fade out*/
+    opacity: 0.7;
+}
+.follow-button:active{
+/*when you click*/
+opacity: 0.5;
+}
+
+.like-button:hover{
+    background-color: green;
+    opacity: 0.7;
+    
+
+}
+
+.like-button:active{
+opacity: 0.5;
+}
+.dislike-button:hover{
+    /*another css property add shadow rightpx downpx(verticle) blurpx   rgba (a means how see through)*/
+    box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.15);
+}
 
 </style>
 <!--using class we do .classname targeting class other then element (any elmenet that has class)-->
