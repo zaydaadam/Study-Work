@@ -1,0 +1,47 @@
+<style>
+    /* used to style doesnt do anything if its empty you can multiple styles*/
+    .follow-button{
+        /* css property  : value also there is color picke (rgb) green red, green, blue  values = 0-255 all 0 black all 255 white */
+        background-color: rgb(21, 33, 197);
+        /* color text*/
+        color: white;
+        /*remove border*/
+        border: none;
+        /*any display has pixels px */
+        /*h and w*/
+        height: 40px;
+        width: 120px;
+        /* round corner */
+        border-radius: 2px;
+        /* get cursor*/
+        cursor: pointer;
+        /*add space*/
+        margin-right: 8px;
+    }
+    .like-button {
+        background-color: green;
+        /*change border color*/
+        border-color: yellow;
+        /*change border paint of color*/
+        border-style: solid;
+        height: 40px;
+        width: 105px;
+        margin-right: 8px;
+        border-radius: 2px;
+
+    }
+    .dislike-button {
+        background-color: red;
+        border-style: solid;
+        border: none;
+        height: 40px;
+        width: 105px;
+    }
+
+
+</style>
+<!--using class we do .classname targeting class other then element (any elmenet that has class)-->
+<button class="follow-button">Follow</button>
+<!--first write the html then style it using cascading style sheets (css)-->
+<button class="like-button">Like</button>
+<button class="dislike-button">Dislike</button>
