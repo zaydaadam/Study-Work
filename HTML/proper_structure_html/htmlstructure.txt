@@ -1,0 +1,5 @@
+ <!DOCTYPE html>
+<html>                  "element"
+<head> <style> </style> </head>           also designed for nesting(elements inside) not visible element on the page (style)
+<body> <buttons></buttons> </body>           also designed for nesting(elements inside)
+</html>                 entire webpage used for nesting containing body and head above is html structure
