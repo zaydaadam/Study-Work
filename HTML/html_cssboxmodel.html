@@ -1,0 +1,159 @@
+<style>
+    .back-button{
+        border-color: rgb(146, 146, 146);
+        border-radius: 2px;
+        color: black;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    .next-button{
+        border-color: rgb(146, 146, 146);
+        border-style: solid;
+        border-radius: 2px;
+        color: black;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .linkforpage{
+        margin-right: 2px;
+        font-weight: bold;
+    }
+    /*stretch button */
+    .stretch-button{
+        background-color: green;
+        color: white;
+        border: none;
+        border-color: green;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: padding-top 1s, padding-bottom 1s, padding-left 1s, padding-right 1s;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+    .stretch-button:hover{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .shadow-button{
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        border-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /*make sure to not forget rgba*/
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        
+    }
+    .shadow-button:active{
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: 5;
+        padding-right: 5px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    .one-button{
+        background-color: green;
+        border-style: none;
+        color: white;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: 5;
+        padding-right: 5px;
+        margin-right: 4px;
+        margin-left: 4px;
+        transition: padding 0.15s,
+        margin 0.15s;
+        cursor: pointer;
+    }
+    .two-button{
+        background-color: green;
+        border-style: none;
+        color: white;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: 5;
+        padding-right: 5px;
+        margin-right: 4px;
+        margin-left: 4px;
+        transition: padding 0.15s,
+        margin 0.15s;
+        cursor: pointer;
+    }
+    .three-button{
+        background-color: green;
+        border-style: none;
+        color: white;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: 5;
+        padding-right: 5px;
+        vertical-align: top;
+        margin-right: 4px;
+        margin-left: 4px;
+        transition: padding 0.15s,
+        margin 0.15s;
+        cursor: pointer;
+    }
+    
+    .one-button:hover{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .two-button:hover{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .three-button:hover{
+
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+</style>
+
+
+
+<button class="back-button">Back</button>
+<a class="linkforpage" href="https://www.google.com/" target="_blank">1</a>
+<a class="linkforpage" href="https://www.google.com/" target="_blank">2</a>
+<a class="linkforpage" href="https://www.google.com/" target="_blank">3</a>
+<a class="linkforpage" href="https://www.google.com/" target="_blank">4</a>
+<a class="linkforpage" href="https://www.google.com/" target="_blank">5</a>
+<button class="next-button">Next</button>
+<p>
+<button class="stretch-button">Stretch</button>
+</p>
+<p>
+<button class="shadow-button">Shadow</button>
+</p>
+<p>
+<button class="one-button">One</button>
+<button class="two-button">Two</button>
+<button class="three-button">Three</button>
+</p>
