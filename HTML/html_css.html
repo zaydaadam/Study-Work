@@ -7,34 +7,51 @@
         color: white;
         /*remove border*/
         border: none;
+        /*border 1 px wide all combine is css box model padding and top and left*/
+        border-width: 1px;
         /*any display has pixels px */
         /*h and w*/
-        height: 40px;
-        width: 120px;
+       /* height: 40px;
+        width: 120px; 
+        (alert)
+        using height and width is bad idea text overflow
+        space between inside of the button is padding
+        */
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-bottom: 10px;
+        padding-right: 16px;
+        /* you can use computed tap in elements to check*/
         /* round corner */
         border-radius: 2px;
         /* get cursor*/
         cursor: pointer;
-        /*add space*/
+        /*add space outside of the element*/
         margin-right: 8px;
         /*change between styles when hovering*/
         transition: opacity 0.15s;
+        /*css align default based on text to change that you can*/
+        vertical-align: top;
     }
     .like-button {
+        /*another way of using color is (HEX) 1d9bf0 R1d G9b bf0 you can us hex to rgb calculator online*/
         background-color: rgb(255, 255, 255);
         /*change border color*/
         color: rgb(83, 83, 0);
         border-color: rgb(83, 83, 0);
         /*change border paint of color*/
         border-style: solid;
-        height: 40px;
-        width: 105px;
-        margin-right: 8px;
+        margin-right: 9px;
+        padding-top: 8px;
+        padding-left: 16px;
+        padding-bottom: 9px;
+        padding-right: 16px;
         border-radius: 2px;
         cursor: pointer;
         /*always put the transition in the original class so it works for all base style*/
         transition: background-color 0.15s,
             color 0.15s;
+        vertical-align: top;
 
     }
     /*not hovering style*/
@@ -42,8 +59,11 @@
         background-color: red;
         border-style: solid;
         border: none;
-        height: 40px;
-        width: 105px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 16px;
+        padding-left: 16px;
+        vertical-align: top;
         margin-left: 8px;
         cursor: pointer;
         /*back round border height/2*/
@@ -67,8 +87,6 @@ opacity: 0.5;
 .like-button:hover{
     background-color: green;
     opacity: 0.7;
-    
-
 }
 
 .like-button:active{
@@ -81,7 +99,7 @@ opacity: 0.5;
 
 </style>
 <!--using class we do .classname targeting class other then element (any elmenet that has class)-->
-<button class="follow-button">Follow</button>
+<button class="follow-button">Follow my account please</button>
 <!--first write the html then style it using cascading style sheets (css)-->
 <button class="like-button">Like</button>
 <button class="dislike-button">Dislike</button>
