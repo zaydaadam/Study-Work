@@ -1,4 +1,12 @@
 <style>
+p{
+    /* clean up */
+    font-family: Arial;
+    /* clean spacing between paragraphs and title */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*  (css specificity) uses priority (p) selector .video-stats is also selector but its more specific then p which targets everything so it has priority */
+}
 .video-title{
     /* font style */
     font-family: Arial;
@@ -32,6 +40,7 @@
     font-size: 14px;
     color: rgb(96, 96, 96);
     margin-top: 0px;
+    margin-bottom: 20px;
 
 }
 .blog-paragraph{
@@ -40,6 +49,33 @@
     color: rgb(96, 96, 96);
     width: 300px;
     line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.blog-text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.span-example {
+    color: red;
+}
+.span-example:hover{
+    text-decoration: underline;
+}
+.link-blog{
+cursor: pointer;
+margin-left: 18px;
+}
+.link-blog:hover{
+/* underline text */
+    text-decoration: underline;
+
 }
 </style>
 <!-- by default paragraph come with default margin -->
@@ -54,3 +90,14 @@
     Zayd Adam &#x2714;
 </p>
 <p class="blog-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, necessitatibus numquam odio quaerat adipisci, consequatur distinctio quasi nemo velit sint illo aspernatur excepturi. Praesentium autem nesciunt voluptatem, aperiam cupiditate laboriosam?</p>
+<!-- on the span you can do margin-left to add space because html combines them -->
+<p class="blog-text">
+    Read early blogs to get more information about Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid accusantium illo vero magni quasi, assumenda doloribus numquam vitae voluptas nihil veritatis iure, eaque deserunt repellat repellendus eum eos <span class="link-blog">voluptatibus aliquam.</span> &#62;
+</p>
+
+<!-- example of text -->
+
+<!-- text element strong exist inside of text only and modify that part of the text,  u creates underlined text and span element most generic no style(best) -->
+<p>    Read early blogs to get more information <strong> Lorem ipsum dolor</strong>, sit amet consectetur adipisicing elit. <Span class="span-example">Aliquid accusantium illo </Span> vero magni quasi, assumenda doloribus numquam vitae voluptas nihil veritatis iure, eaque <u> repellat repellendus eum eos voluptatibus </u>aliquam.
+
+</p>
