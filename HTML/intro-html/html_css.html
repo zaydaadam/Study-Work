@@ -1,6 +1,6 @@
 <style>
     /* used to style doesnt do anything if its empty you can multiple styles*/
-    .follow-button{
+    .follow-button {
         /* css property  : value also there is color picke (rgb) green red, green, blue  values = 0-255 all 0 black all 255 white */
         background-color: rgb(21, 33, 197);
         /* color text*/
@@ -11,7 +11,7 @@
         border-width: 1px;
         /*any display has pixels px */
         /*h and w*/
-       /* height: 40px;
+        /* height: 40px;
         width: 120px; 
         (alert)
         using height and width is bad idea text overflow
@@ -33,6 +33,7 @@
         /*css align default based on text to change that you can*/
         vertical-align: top;
     }
+
     .like-button {
         /*another way of using color is (HEX) 1d9bf0 R1d G9b bf0 you can us hex to rgb calculator online*/
         background-color: rgb(255, 255, 255);
@@ -54,6 +55,7 @@
         vertical-align: top;
 
     }
+
     /*not hovering style*/
     .dislike-button {
         background-color: red;
@@ -71,32 +73,34 @@
         transition: box-shadow 0.15s;
 
     }
-/*
+
+    /*
 hover effect when you put cursor on button (sedo class = hover) we get these styles and the original style
 */
 
-.follow-button:hover {
-    /*how see through an 0-1 1 is normal fade out*/
-    opacity: 0.7;
-}
-.follow-button:active{
-/*when you click*/
-opacity: 0.5;
-}
+    .follow-button:hover {
+        /*how see through an 0-1 1 is normal fade out*/
+        opacity: 0.7;
+    }
 
-.like-button:hover{
-    background-color: green;
-    opacity: 0.7;
-}
+    .follow-button:active {
+        /*when you click*/
+        opacity: 0.5;
+    }
 
-.like-button:active{
-opacity: 0.5;
-}
-.dislike-button:hover{
-    /*another css property add shadow rightpx downpx(verticle) blurpx   rgba (a means how see through)*/
-    box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.15);
-}
+    .like-button:hover {
+        background-color: green;
+        opacity: 0.7;
+    }
 
+    .like-button:active {
+        opacity: 0.5;
+    }
+
+    .dislike-button:hover {
+        /*another css property add shadow rightpx downpx(verticle) blurpx   rgba (a means how see through)*/
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    }
 </style>
 <!--using class we do .classname targeting class other then element (any elmenet that has class)-->
 <button class="follow-button">Follow my account please</button>
