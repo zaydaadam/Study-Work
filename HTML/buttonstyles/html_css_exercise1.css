@@ -1,4 +1,4 @@
-<style>
+
     .askcomputer-button{
         background-color: brown;
         border: none;
@@ -111,21 +111,3 @@
     background-color: rgb(226, 240, 254);
     border-width: 2px;
     }
-</style>
-<p>
-    <button class="askcomputer-button">Ask Computer</button> 
-</p>
-<p> 
-    <button class="sendcart-button">Send to Cart</button>
-</p> 
-<p>
-    <button class="start-button">Start</button>
-</p>
-<p>
-    <button class="login-button">Login</button>
-    <button class="logout-button">Logout</button>
-</p>
-<p>
-    <button class="apply-button">Apply Now</button>
-    <button class="save-button">Save</button>
-</p>

@@ -1,4 +1,4 @@
-<style>
+
     .back-button{
         border-color: rgb(146, 146, 146);
         border-radius: 2px;
@@ -135,25 +135,3 @@
         margin-right: 0px;
         margin-left: 0px;
     }
-</style>
-
-
-
-<button class="back-button">Back</button>
-<a class="linkforpage" href="https://www.google.com/" target="_blank">1</a>
-<a class="linkforpage" href="https://www.google.com/" target="_blank">2</a>
-<a class="linkforpage" href="https://www.google.com/" target="_blank">3</a>
-<a class="linkforpage" href="https://www.google.com/" target="_blank">4</a>
-<a class="linkforpage" href="https://www.google.com/" target="_blank">5</a>
-<button class="next-button">Next</button>
-<p>
-<button class="stretch-button">Stretch</button>
-</p>
-<p>
-<button class="shadow-button">Shadow</button>
-</p>
-<p>
-<button class="one-button">One</button>
-<button class="two-button">Two</button>
-<button class="three-button">Three</button>
-</p>

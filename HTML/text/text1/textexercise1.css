@@ -1,5 +1,4 @@
 
-<style>
     p{
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -68,25 +67,4 @@
       margin-right: 20px;
       margin-left: 20px;
     }
-
-</style>
-<p class="texttahoma">
-    This is Tahoma Font
-</p>
-<p class="textdeals">
-    Biggest Deals of the Year! <span class="textsales">Sales end Tuesday</span>
-</p>
-<br>
-<br>
-<p class="textverdana">
-    HTML CSS Course
-    <span class="textpro"> Beginner to Pro</span>
-</p>
-<p class="textparagraph1">
-    In this course, we'll learn the skills you need to become a developer.
-</p>
-<button class="start-button">Get Started</button>
-<br>
-<br>
-<p class="all-text"> <span class="top-text">Shopping for your business?</span><span class="middle-text"> See how Apple at Work can help.</span> <span class="last-text">Learn more &#62;</span></p>
 
