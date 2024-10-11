@@ -1,0 +1,78 @@
+p{
+    /* clean up */
+    font-family: Roboto;
+    /* clean spacing between paragraphs and title */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*  (css specificity) uses priority (p) selector .video-stats is also selector but its more specific then p which targets everything so it has priority */
+}
+.video-title{
+    /* font style */
+    font-family: Arial;
+    /*make font bold*/
+    font-weight: bold;
+    /*font size*/
+    font-size: 18px;
+    /*make font bold*/
+    /* style italic */
+    /* font-style: italic; */
+    /* center text */
+    /* text-align: center; */
+
+    /* force text to second line */
+    width: 300px;
+    /* spacing between lines */
+    line-height: 24px;
+    /* removed default margin spacing between p */
+    margin-bottom: 5px;
+}
+.blog-stats{
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+.blog-author{
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+.blog-paragraph{
+    font-family: Arial;
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+    width: 300px;
+    line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.blog-text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.span-example {
+    color: red;
+}
+.span-example:hover{
+    text-decoration: underline;
+}
+.link-blog{
+cursor: pointer;
+margin-left: 18px;
+}
+.link-blog:hover{
+/* underline text */
+    text-decoration: underline;
+
+}
