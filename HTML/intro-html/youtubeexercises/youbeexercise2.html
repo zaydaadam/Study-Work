@@ -1,64 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise2</title>
     <style>
-    .search-bar{
-        font-size: 16px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-left: 8px;
-        border-radius: 3px;
-        border-style: solid;
-        border-width: 0.8px;
-        text-indent: 10px;
-        border-color: rgb(200, 200, 200);
-    }
-    .search2-bar{
-    font-size: 16px;
-    width: 500px;
-    border: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 30px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    margin-top: 20px;
-    margin-left: 20px;
+        .search-bar {
+            font-size: 16px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            margin-left: 8px;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 0.8px;
+            text-indent: 10px;
+            border-color: rgb(200, 200, 200);
+        }
 
-    }
+        .search2-bar {
+            font-size: 16px;
+            width: 500px;
+            border: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 30px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+
+        .text1 {
+            margin-bottom: 3px;
+            color: rgb(102, 102, 102);
+        }
+
+        .bar1 {
+            margin-left: 3px;
+            font-size: 14px;
+            width: 350px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-color: gray;
+            border-style: solid;
+            border-radius: 5px;
+        }
+
+        .text2 {
+            color: rgb(102, 102, 102);
+        }
+
+        .longagreejoin {
+            background-color: rgb(10, 102, 194);
+            color: white;
+            border: none;
+            font-size: 20px;
+            width: 400px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-radius: 30px;
+        }
+
+        .img1 {
+            width: 50px;
+            height: 50px;
+            /* remember object-fit: cover; */
     
-    .text1{
+            object-fit: cover;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 50px;
+            /* remember vertical-align: middle; */
+            vertical-align: middle;
+        }
 
-    }
-    .bar1{
+        .text3 {
+            color: gray;
+            vertical-align: middle;
+            margin-right: 100px;
+            font-size: 20px;
+            border: none;
+            width: 300px;
+        }
 
-    }
-    .text2{
+        .shorttweet {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            vertical-align: middle;
 
-    }
-    .longagreejoin{
-
-    }
-    .img1{
-
-    }
-    .text3{
-
-    }
-    .shorttweet{
-        color: white;
-    }
-
+        }
     </style>
 </head>
+
 <body>
     <input class="search-bar" type="search" placeholder="Search">
     <p>
         <input class="search2-bar" type="search" placeholder="Search Google or type a URL">
     </p>
+    <p class="text1">
+        Email
+    </p>
+    <input class="bar1" type="email">
+    <p class="text2">
+        By clicking Agree & Join, you agree to Privacy Policy.
+    </p>
+    <button class="longagreejoin">
+        Agree & Join
+    </button>
+    <p>
+        <img class="img1" src="kitty-cat-kitten-pet-45201.jpeg">
+        <input type="text" class="text3" placeholder="What's happening?">
+        <button class="shorttweet"> Tweet</button>
+    </p>
 </body>
+
 </html>
