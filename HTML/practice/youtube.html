@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="thumbnails/youtube-6616310_1280.webp">
 
     <style>
-        .thumbnail{
+        .thumbnail {
             /* looses shape when you try to change height */
             width: 300px;
             /* height: 300px; */
@@ -19,38 +19,69 @@
             display: block;
 
         }
-        .search-bar{
+
+        .search-bar {
+            display: block;
+            margin-bottom: 20px;
         }
-        .video-title{
+
+        .video-title {
             width: 300px;
         }
+
         /* css syntax target multiple things with comma (,) 
         .video-title , .video-stats{
              using this property we can control element if its on same line or different line 
             display: inline-block;
         }*/
+        .video-preview {
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
+        }
     </style>
 </head>
 
 <body>
     <!-- moved searchbox above forced to the top by img -->
-    <input class="search=bar" type="search" placeholder="Search">
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-    <!-- input type="checkbox" for a check box, place holder disappears search -->
-     <!-- <input class="search=bar" type="search" placeholder="Search"> -->
-    <!-- text box beside image same line because display property 3 types of elements -->
-     <!-- 1.block element = takes up the entire line (p) is block element default
-          2. inline-block element = only takes up as much space it needs example (img) and (input) elements
-          3. inline element = appears within a text (like <strong> </strong> which bold)
-     -->
-    <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-    <p class="video-author">
-        Marques Brownlee
-    </p>
-    <p class="video-stats">
-        3.4M views · 6 months ago
-    </p>
+    <input class="search-bar" type="search" placeholder="Search">
+    <div class="video-preview">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        <!-- input type="checkbox" for a check box, place holder disappears search -->
+        <!-- <input class="search=bar" type="search" placeholder="Search"> -->
+        <!-- text box beside image same line because display property 3 types of elements -->
+        <!-- 1.block element = takes up the entire line in their container                              (p) is block element default
+                      2. inline-block element = only takes up as much space it needs                        example (img) and (input) elements
+                      3. inline element = appears within a text                                             (like <strong> </strong> which bold)
+                 -->
+        <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">
+            Marques Brownlee
+        </p>
+        <p class="video-stats">
+            3.4M views &#183; 6 months ago
+        </p>
+        <!-- most important element widely used  (div) default bloc element
+                 creates box around content
+                 it can contain any element
+                 <div> = container
+                -->
+    </div>
+    <div class="video-preview">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        <p class="video-title">
+            Try Not To Laugh Challenge #9
+        </p>
+        <p class="video-author">
+            Markiplier
+        </p>
+        <p class="video-stats">
+            19M views &#183; 4 years ago
+        </p>
+
+    </div>
 
 </html>
