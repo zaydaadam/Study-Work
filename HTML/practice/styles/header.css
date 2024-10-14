@@ -5,19 +5,106 @@
     justify-content: space-between;
 }
 
-.left-section{
-    background-color: lightblue;
-    width: 150px;
+.left-section {
+    display: flex;
+    align-items: center;
 }
-.middle-section{
-    background-color: lightpink;
+
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.middle-section {
     flex: 1;
     margin-left: 70px;
     margin-right: 35px;
     /* limit it to 300px so it stops growing for search */
     max-width: 500px;
+    display: flex;
+    align-items: center;
+    /* flex-direction:row; we dont need horizontal only for practice code its default  */
 }
-.right-section{
-    background-color: lightblue;
-    width: 200px;
+
+.search-bar {
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(199, 196, 196);
+    border-radius: 2px;
+    /* 1px to the horizontal then vertical */
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    margin-left: -1px;
+    margin-right: 8px;
+
+}
+
+.search-icon {
+    height: 25px;
+    margin-top: 4px;
+}
+
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 240, 240);
+
+}
+
+.voice-search-icon {
+    height: 24px;
+    margin-top: 4px;
+}
+
+.right-section {
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* dont shrink right side hides user if you dont change searchbar */
+    flex-shrink: 0;
+}
+
+.upload-icon {
+    height: 24px;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 16px;
 }
