@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- layout is more rigid for grid then flexbox -->
 <head>
 </head>
 <!-- CSS Grid fix alignment issues with displayl in line block cause profile and youtube title space from two div -->
@@ -31,7 +31,7 @@
     <div style="
                 display:grid;
                 margin-top: 30px;       
-                                    /* 1fr takes the remain space */
+                                    /* 1fr takes the remain space  rigid layout for grid wont change if change order*/
                 grid-template-columns: 100px 1fr;
                 ">
         <div style="background-color: lightblue;">100px</div>
